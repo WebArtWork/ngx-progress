@@ -2,7 +2,8 @@
 
 ## Usage
 ```html
-<wprogress progress="100"></wprogress>	
+<wprogress progress="100" progressType="linear"></wprogress>
+<wprogress progress="100" progressType="circular"></wprogress>	
 ```
 
 ## Arguments
