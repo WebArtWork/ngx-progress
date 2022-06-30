@@ -10,11 +10,7 @@ export class ProgressComponent{
 	@Input() barColor;
 	@Input() progressType: any;
 	@Input() dashoffset;
-	@Input() progresNumber;
-
-
-
-
-
+	@Input() progressNumber;
+	
 	constructor() {}
 }

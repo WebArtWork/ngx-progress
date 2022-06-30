@@ -5,19 +5,22 @@
     background-color: var(--c-bg-primary);
     border-radius: 20px;
     overflow: hidden;
-    &__bar {
+    .progress-bar__bar {
       height: 100%;
       border-radius: 20px;
       background-color: var(--c-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-    &__background {
-      fill: none;
-      stroke: #e2eff0;
-      stroke-width: $progress-bar-stroke-width;
+    .progress-bar__number {
+      color: white;
+      font-weight: 400;
     }
   }	
   &.circular {
     position: relative;
+    width: max-content;
     .progress-bar__bar {
       fill: none;
       stroke: var(--c-bg-primary);
@@ -27,6 +30,11 @@
       stroke-linecap: round;
       stroke-width: 1.8;
       transition: stroke-dashoffset 1s ease-in-out;
+    }
+    .progress-bar__background {
+      fill: none;
+      stroke: #e2eff0;
+      stroke-width: 1.8;
     }
     .progress-bar__number {
       position: absolute;
